@@ -9,6 +9,20 @@ window.config = {
   showLoadingIndicator: true,
   strictZSpacingForVolumeViewport: true,
   defaultDataSourceName: 'dicomweb',
+  oidc: [
+    {
+      authority: 'https://dev-q7f0rg3v85kbea4g.us.auth0.com/',
+      client_id: 'zBS2UutmiFTTZA9bwITvZtS7Jnnz89l1',
+      redirect_uri: '/callback',
+      response_type: 'id_token token',
+      scope: 'openid profile email',
+      // ~ OPTIONAL
+      //post_logout_redirect_uri: '/logout-redirect.html',
+      //revoke_uri: 'https://accounts.google.com/o/oauth2/revoke?token=',
+      automaticSilentRenew: true,
+      //revokeAccessTokenOnSignout: true,
+    },
+  ],
   dataSources: [
     {
       namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
