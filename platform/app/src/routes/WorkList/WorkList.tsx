@@ -448,7 +448,9 @@ function WorkList({
     },
   ];
 
+  /*
   if (appConfig.oidc) {
+    Disabled since AuthO Asks at every login which user pick
     menuOptions.push({
       icon: 'power-off',
       title: t('Header:Logout'),
@@ -457,7 +459,7 @@ function WorkList({
       },
     });
   }
-
+  */
   const { customizationService } = servicesManager.services;
   const { component: dicomUploadComponent } =
     customizationService.get('dicomUploadComponent') ?? {};
