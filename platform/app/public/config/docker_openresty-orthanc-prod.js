@@ -30,9 +30,9 @@ window.config = {
       configuration: {
         friendlyName: 'Orthanc Server',
         name: 'Orthanc',
-        wadoUriRoot: 'https://api3.smart-mata.com/pacs/dicom-web',
-        qidoRoot: 'https://api3.smart-mata.com/dicom-web',
-        wadoRoot: 'https://api3.smart-mata.com/dicom-web',
+        wadoUriRoot: 'https://viewer.smart-mata.com/pacs/dicom-web',
+        qidoRoot: 'https://viewer.smart-mata.com/pacs/dicom-web',
+        wadoRoot: 'https://viewer.smart-mata.com/pacs/dicom-web',
         qidoSupportsIncludeField: true,
         supportsReject: true,
         imageRendering: 'wadors',
